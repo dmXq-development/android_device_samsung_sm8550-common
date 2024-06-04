@@ -188,6 +188,7 @@ vendor.power.pasr.enabled=true
 
 # Perf
 ro.vendor.extension_library=libqti-perfd-client.so
+ro.vendor.perf.scroll_opt=1
 
 # RCS
 persist.vendor.rcs.singlereg.feature=1
