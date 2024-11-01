@@ -70,6 +70,10 @@ ro.crypto.metadata_init_delete_all_keys.enabled=true
 # Dex2oat
 dalvik.vm.dex2oat64.enabled=true
 
+# Dexopt
+pm.dexopt.first-boot=quicken
+pm.dexopt.bg-dexopt=everything
+
 # Display
 persist.sys.sf.color_mode=0
 persist.sys.sf.hs_mode=0
