@@ -199,6 +199,10 @@ PRODUCT_PACKAGES += \
     init.samsung.power.rc \
     init.samsung.rc
 
+# LiveDisplay
+PRODUCT_PACKAGES += \
+    vendor.lineage.livedisplay@2.0-service.samsung-qcom.sm8550
+
 # Keymint
 PRODUCT_PACKAGES += \
     android.hardware.hardware_keystore.xml
