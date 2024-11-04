@@ -178,9 +178,10 @@ PRODUCT_PACKAGES += \
     init.samsung.power.rc \
     init.samsung.rc
 
-# LiveDisplay
+# LiveDisplay and Touch
 PRODUCT_PACKAGES += \
-    vendor.lineage.livedisplay@2.0-service.samsung-qcom.sm8550
+    vendor.lineage.livedisplay@2.0-service.samsung-qcom.sm8550 \
+    vendor.lineage.touch@1.0-service.sm8550
 
 # Keymint
 PRODUCT_COPY_FILES += \

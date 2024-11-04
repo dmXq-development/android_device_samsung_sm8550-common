@@ -423,4 +423,17 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE
         <fqname>@2.0::IDisplayColorCalibration/default</fqname>
         <fqname>@2.0::ISunlightEnhancement/default</fqname>
     </hal>
+    <hal format="hidl">
+        <name>vendor.lineage.touch</name>
+        <transport>hwbinder</transport>
+        <version>1.0</version>
+        <interface>
+            <name>IGloveMode</name>
+            <instance>default</instance>
+        </interface>
+        <interface>
+            <name>ITouchscreenGesture</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
 </manifest>
