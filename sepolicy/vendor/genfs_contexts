@@ -127,11 +127,47 @@ genfscon sysfs "/devices/virtual/sec/sec-pa-thermistor"                       u:
 genfscon sysfs "/devices/virtual/sec/sec-wf-thermistor"                       u:object_r:vendor_sysfs_thermal:s0
 
 # Touchscreen
-genfscon sysfs "/devices/platform/soc/ac0000.qcom,qupv3_1_geni_se/a90000.spi/spi_master/spi" u:object_r:vendor_sysfs_touchscreen:s0
-genfscon sysfs "/devices/virtual/sec/tsp"                                                    u:object_r:vendor_sysfs_touchscreen:s0
-genfscon sysfs "/devices/virtual/sec/tsp/cmd"                                                u:object_r:vendor_sysfs_touchscreen_writable:s0
-genfscon sysfs "/devices/virtual/sec/tsp/ear_detect_enable"                                  u:object_r:vendor_sysfs_touchscreen_writable:s0
-genfscon sysfs "/devices/virtual/sec/tsp/prox_power_off"                                     u:object_r:vendor_sysfs_touchscreen_writable:s0
+genfscon sysfs "/devices/platform/soc/ac0000.qcom,qupv3_1_geni_se/a90000.spi/spi_master/spi"       u:object_r:vendor_sysfs_touchscreen:s0
+genfscon sysfs "/devices/virtual/sec/tsp"                                                          u:object_r:vendor_sysfs_touchscreen:s0
+genfscon sysfs "/devices/virtual/sec/tsp/cmd"                                                      u:object_r:vendor_sysfs_touchscreen_writable:s0
+genfscon sysfs "/devices/virtual/sec/tsp/enabled"                                                  u:object_r:vendor_sysfs_touchscreen_writable:s0
+genfscon sysfs "/devices/virtual/sec/tsp/prox_power_off"                                           u:object_r:vendor_sysfs_touchscreen_writable:s0
+genfscon sysfs "/devices/virtual/sec/tsp/prox_power_on"                                            u:object_r:vendor_sysfs_touchscreen_writable:s0
+genfscon sysfs "/devices/virtual/sec/tsp/sensitivity_mode"                                         u:object_r:vendor_sysfs_touchscreen_writable:s0
+genfscon sysfs "/devices/virtual/sec/tsp/noise_mode"                                               u:object_r:vendor_sysfs_touchscreen_writable:s0
+genfscon sysfs "/devices/virtual/sec/tsp/comm_err_count"                                           u:object_r:vendor_sysfs_touchscreen_writable:s0
+genfscon sysfs "/devices/virtual/sec/tsp/multi_count"                                              u:object_r:vendor_sysfs_touchscreen_writable:s0
+genfscon sysfs "/devices/virtual/sec/tsp/wet_mode"                                                 u:object_r:vendor_sysfs_touchscreen_writable:s0
+genfscon sysfs "/devices/virtual/sec/tsp/all_touch_count"                                          u:object_r:vendor_sysfs_touchscreen:s0
+genfscon sysfs "/devices/virtual/sec/tsp/checksum"                                                 u:object_r:vendor_sysfs_touchscreen:s0
+genfscon sysfs "/devices/virtual/sec/tsp/cmd_list"                                                 u:object_r:vendor_sysfs_touchscreen:s0
+genfscon sysfs "/devices/virtual/sec/tsp/cmd_result"                                               u:object_r:vendor_sysfs_touchscreen:s0
+genfscon sysfs "/devices/virtual/sec/tsp/cmd_result_all"                                           u:object_r:vendor_sysfs_touchscreen:s0
+genfscon sysfs "/devices/virtual/sec/tsp/cmd_status"                                               u:object_r:vendor_sysfs_touchscreen:s0
+genfscon sysfs "/devices/virtual/sec/tsp/cmd_status_all"                                           u:object_r:vendor_sysfs_touchscreen:s0
+genfscon sysfs "/devices/virtual/sec/tsp/fod_info"                                                 u:object_r:vendor_sysfs_touchscreen:s0
+genfscon sysfs "/devices/virtual/sec/tsp/fod_pos"                                                  u:object_r:vendor_sysfs_touchscreen:s0
+genfscon sysfs "/devices/virtual/sec/tsp/get_lp_dump"                                              u:object_r:vendor_sysfs_touchscreen:s0
+genfscon sysfs "/devices/virtual/sec/tsp/ito_check"                                                u:object_r:vendor_sysfs_touchscreen:s0
+genfscon sysfs "/devices/virtual/sec/tsp/module_id"                                                u:object_r:vendor_sysfs_touchscreen:s0
+genfscon sysfs "/devices/virtual/sec/tsp/raw_check"                                                u:object_r:vendor_sysfs_touchscreen:s0
+genfscon sysfs "/devices/virtual/sec/tsp/read_ambient_info"                                        u:object_r:vendor_sysfs_touchscreen:s0
+genfscon sysfs "/devices/virtual/sec/tsp/scrub_pos"                                                u:object_r:vendor_sysfs_touchscreen:s0
+genfscon sysfs "/devices/virtual/sec/tsp/support_feature"                                          u:object_r:vendor_sysfs_touchscreen:s0
+
+# LCD panel writable nodes
+genfscon sysfs "/devices/virtual/lcd/panel/fp_green_circle"                                        u:object_r:vendor_sysfs_touchscreen_writable:s0
+
+# Fingerprint
+genfscon sysfs "/devices/virtual/fingerprint/fingerprint/position"            u:object_r:vendor_sysfs_fingerprint:s0
+
+# Night dim
+genfscon sysfs "/class/lcd/panel/night_dim"                                    u:object_r:sysfs_nightdim:s0
+genfscon sysfs "/class/lcd/panel1/night_dim"                                   u:object_r:sysfs_nightdim:s0
+
+# Backlight
+genfscon sysfs "/class/backlight/panel0-backlight/brightness"                 u:object_r:vendor_sysfs_backlight_writable:s0
+genfscon sysfs "/class/lcd/panel/mask_brightness"                             u:object_r:vendor_sysfs_backlight_writable:s0
 
 # Vibrator
 genfscon sysfs "/devices/virtual/sec_vib_inputff/control/use_sep_index"       u:object_r:vendor_sysfs_vib_writable:s0

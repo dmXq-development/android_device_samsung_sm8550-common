@@ -1,0 +1,7 @@
+# SamsungParts
+allow system_app sysfs_nightdim:file rw_file_perms;
+allow system_app vendor_sysfs_fingerprint:file rw_file_perms;
+allow system_app vendor_sysfs_fingerprint:dir r_dir_perms;
+allow system_app vendor_sysfs_touchscreen_writable:file rw_file_perms;
+allow system_app vendor_sysfs_touchscreen:file r_file_perms;
+allow system_app vendor_sysfs_touchscreen:dir r_dir_perms;

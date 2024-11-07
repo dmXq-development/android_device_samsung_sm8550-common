@@ -25,6 +25,9 @@
 # Fingerprint data
 /data/vendor/biometrics(/.*)?                u:object_r:vendor_biometrics_data_file:s0
 
+# Fingerprint device
+/dev/esfp0                                   u:object_r:fingerprint_device:s0
+
 # Firmware
 /odm/firmware(/.*)?                          u:object_r:vendor_firmware_file:s0
 
@@ -55,8 +58,18 @@
 /dev/ttyGS[0-9]*                             u:object_r:serial_device:s0
 /dev/ttyHS[0-9]*                             u:object_r:serial_device:s0
 
+# Panel sysfs nodes
+/sys/class/backlight/panel[0-9]+-backlight/brightness u:object_r:vendor_sysfs_backlight_writable:s0
+/sys/class/lcd/panel/mask_brightness                  u:object_r:vendor_sysfs_backlight_writable:s0
+/sys/class/lcd/panel/night_dim                              u:object_r:sysfs_nightdim:s0
+/sys/class/lcd/panel1/night_dim                             u:object_r:sysfs_nightdim:s0
+/sys/class/fingerprint/fingerprint/position                 u:object_r:sysfs_fingerprint_pos:s0
+/sys/class/sec/tsp(/.*)?                                    u:object_r:sec_tsp_sysfs:s0
+
 # Touchscreen
 /sys/devices/platform/soc/ac0000.qcom,qupv3_1_geni_se/a90000.spi/spi_master/spi[0-9]/spi[0-9].[0-9]/wakeup(/.*)? u:object_r:sysfs_wakeup:s0
+/sys/devices/platform/soc/.*(/sm5714-fuelgauge|/sm5714-charger)/power_supply/.*       u:object_r:vendor_sysfs_battery:s0
+/sys/devices/platform/soc/[a-f0-9]+\.qcom,qupv3_i2c_geni_se/[a-f0-9]+\.i2c/i2c-[0-9]+/[0-9]+-[0-9]+/power_supply/.+   u:object_r:sysfs_battery:s0
 
 # UFS Devices
 /dev/block/platform/soc/1d84000.ufshc/by-name/bluetooth      u:object_r:vendor_modem_block_device:s0
