@@ -2,3 +2,7 @@
 attribute hal_hyper;
 attribute hal_hyper_server;
 attribute hal_hyper_client;
+
+
+# Tag for read/write filesystem type
+attribute rw_fs_type;

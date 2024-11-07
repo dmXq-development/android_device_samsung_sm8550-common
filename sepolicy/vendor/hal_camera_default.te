@@ -32,3 +32,4 @@ set_prop(hal_camera_default, sec_camera_prop)
 allow hal_camera_default system_server:binder call;
 
 allow hal_camera_default rild:unix_stream_socket connectto;
+allow hal_camera_default sec_efs_file:dir search;

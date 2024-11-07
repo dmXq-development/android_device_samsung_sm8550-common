@@ -31,6 +31,10 @@ type vendor_sysfs_input, fs_type, sysfs_type;
 
 # LiveDisplay
 type sysfs_mdnie_writable, sysfs_type, rw_fs_type, fs_type;
+type sysfs_touchscreen_writable, sysfs_type, rw_fs_type, fs_type;
+type sysfs_lcd_writable, sysfs_type, fs_type; 
+type sysfs_sec_touchscreen, sysfs_type, fs_type;
+type sysfs_battery, sysfs_type, fs_type, rw_fs_type;
 
 # Proc
 type proc_simslot_count, fs_type, proc_type;
