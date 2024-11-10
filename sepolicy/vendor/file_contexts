@@ -19,6 +19,9 @@
 /mnt/vendor/efs/prov_data(/.*)?              u:object_r:dak_efs_file:s0
 /mnt/vendor/efs/tee(/.*)?                    u:object_r:tee_efs_file:s0
 
+# S Pen
+/sys/devices/virtual/sec/sec_epen(/.*)?      u:object_r:sysfs_spen:s0
+
 # Convergence data
 /data/vendor/conn(/.*)?                      u:object_r:vendor_convergence_data_file:s0
 
@@ -89,3 +92,4 @@
 /(vendor|system/vendor)/bin/hw/vendor\.samsung\.hardware\.thermal@1\.0-service                               u:object_r:hal_thermal_default_exec:s0
 /(vendor|system/vendor)/bin/hw/vendor\.samsung\.hardware\.vibrator-service                                   u:object_r:hal_vibrator_default_exec:s0
 /(vendor|system/vendor)/bin/secril_config_svc                                                                u:object_r:vendor_secril_config_svc_exec:s0
+/(vendor|system/vendor)/bin/hw/vendor\.samsung\.hardware\.spen-service\.davinci                        u:object_r:hal_samsung_spen_default_exec:s0

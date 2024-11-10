@@ -350,6 +350,8 @@ PRODUCT_COPY_FILES += \
 ifeq ($(TARGET_HAVE_SPEN),true)
 PRODUCT_PACKAGES += \
     SPenActions
+PRODUCT_PACKAGES += \
+    vendor.samsung.hardware.spen-service.davinci
 endif
 
 # Inherit from the proprietary files makefile.
