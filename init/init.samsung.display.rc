@@ -464,13 +464,13 @@ on post-fs-data
 	chmod 0660 /sys/class/lcd/panel/mask_brightness
 
 	chown system system /sys/class/lcd/panel/actual_mask_brightness
-	chmod 0440 /sys/class/lcd/panel/actual_mask_brightness
+	chmod 0660 /sys/class/lcd/panel/actual_mask_brightness
 
 	chown system system /sys/class/lcd/panel1/mask_brightness
 	chmod 0660 /sys/class/lcd/panel1/mask_brightness
 
 	chown system system /sys/class/lcd/panel1/actual_mask_brightness
-	chmod 0440 /sys/class/lcd/panel1/actual_mask_brightness
+	chmod 0660 /sys/class/lcd/panel1/actual_mask_brightness
 
 # UB CONN DET
 	chown system system /sys/class/lcd/panel/conn_det
