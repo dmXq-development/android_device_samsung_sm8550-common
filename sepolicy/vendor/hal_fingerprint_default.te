@@ -26,3 +26,6 @@ allow hal_fingerprint_default vendor_sysfs_battery:dir search;
 allow hal_fingerprint_default device:chr_file { getattr };
 allow hal_fingerprint_default vendor_data_file:dir write;
 allow hal_fingerprint_default fingerprint_device:chr_file { open read write getattr ioctl };
+
+allow hal_fingerprint_default sysfs_lcd_writable:dir r_dir_perms;
+allow hal_fingerprint_default sysfs_lcd_writable:file rw_file_perms;
