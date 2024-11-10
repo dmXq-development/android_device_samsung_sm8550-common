@@ -82,3 +82,6 @@ genfscon sysfs "/devices/virtual/sec/tsp/prox_power_off"                        
 # Vibrator
 genfscon sysfs "/devices/virtual/sec_vib_inputff/control/use_sep_index"       u:object_r:vendor_sysfs_vib_writable:s0
 genfscon sysfs "/devices/virtual/vib_info_class/vib_support_info/functions"   u:object_r:vendor_sysfs_vib_support:s0
+
+# LCD 
+genfscon sysfs /devices/virtual/lcd/panel    u:object_r:sysfs_lcd_writable:s0

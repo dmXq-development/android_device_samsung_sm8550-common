@@ -1,9 +1,17 @@
-# /sys/devices/virtual/lcd/panel
-allow hal_lineage_livedisplay_sysfs sysfs_lcd_writable:file { read write open };
-# /sys/devices/virtual/mdnie/mdnie/
-allow hal_lineage_livedisplay_sysfs sysfs_mdnie_writable:dir search;
-allow hal_lineage_livedisplay_sysfs sysfs_mdnie_writable:file { read write open getattr };
-allow hal_lineage_livedisplay_sysfs vendor_sysfs_graphics:file write;
+# Allow hal_lineage_livedisplay_sysfs to access /sys/devices/virtual/lcd/panel
+allow hal_lineage_livedisplay_sysfs sysfs_lcd_writable:dir r_dir_perms;
+allow hal_lineage_livedisplay_sysfs sysfs_lcd_writable:file rw_file_perms;
+
+# Allow access to /sys/devices/virtual/mdnie/mdnie directory and files
+allow hal_lineage_livedisplay_sysfs sysfs_mdnie_writable:dir r_dir_perms;
+allow hal_lineage_livedisplay_sysfs sysfs_mdnie_writable:file rw_file_perms;
+
+# Permit write access to vendor_sysfs_graphics file
+allow hal_lineage_livedisplay_sysfs vendor_sysfs_graphics:file { write };
+
+# Allow write, add_name, and search operations for vendor_display_vendor_data_file directory
 allow hal_lineage_livedisplay_sysfs vendor_display_vendor_data_file:dir { write add_name search };
 allow hal_lineage_livedisplay_sysfs vendor_display_vendor_data_file:file { write open create getattr };
+
+# Grant general file permissions to hal_lineage_livedisplay_sysfs context in sysfs
 allow hal_lineage_livedisplay_sysfs sysfs:file { read write getattr open append ioctl lock };
