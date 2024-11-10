@@ -1,3 +1,6 @@
+# HALs
+hal_attribute_lineage(samsung_spen)
+
 # Hyper
 attribute hal_hyper;
 attribute hal_hyper_server;
