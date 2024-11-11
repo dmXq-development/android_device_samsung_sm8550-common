@@ -29,3 +29,7 @@ allow hal_fingerprint_default fingerprint_device:chr_file { open read write geta
 
 allow hal_fingerprint_default sysfs_lcd_writable:dir r_dir_perms;
 allow hal_fingerprint_default sysfs_lcd_writable:file rw_file_perms;
+
+# Allow fingerprint HAL to access the touchscreen sysfs directory and write to the command file
+allow hal_fingerprint_default vendor_sysfs_touchscreen:dir search;
+allow hal_fingerprint_default vendor_sysfs_touchscreen:file rw_file_perms;
