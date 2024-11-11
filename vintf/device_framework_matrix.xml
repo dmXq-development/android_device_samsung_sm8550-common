@@ -177,4 +177,12 @@
             <instance>default</instance>
         </interface>
     </hal>
+    <hal format="aidl" optional="true">
+        <name>vendor.samsung.hardware.spen</name>
+        <version>1</version>
+        <interface>
+            <name>ISPen</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
 </compatibility-matrix>
