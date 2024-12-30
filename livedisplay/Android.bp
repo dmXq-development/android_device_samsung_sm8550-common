@@ -8,11 +8,13 @@ cc_binary {
     name: "vendor.lineage.livedisplay@2.0-service.samsung-qcom.sm8550",
     defaults: ["hidl_defaults"],
     init_rc: ["vendor.lineage.livedisplay@2.0-service.samsung-qcom.sm8550.rc"],
+    vintf_fragments: ["vendor.lineage.livedisplay@2.0-service.samsung-qcom.sm8550.xml"],
     relative_install_path: "hw",
     srcs: [
         "AdaptiveBacklight.cpp",
-        "SunlightEnhancement.cpp",
         "DisplayColorCalibration.cpp",
+        "DisplayModes.cpp",
+        "SunlightEnhancement.cpp",
         "service.cpp",
     ],
     shared_libs: [
