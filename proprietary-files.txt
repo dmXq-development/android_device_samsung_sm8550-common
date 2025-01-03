@@ -369,7 +369,8 @@ vendor/lib64/libarcsoft_video_super_night.so
 vendor/lib64/libatccore.so
 vendor/lib64/libauto_framing_arcsoft.uniplugin@1.0.so
 vendor/lib64/libauto_framing_lite.uniplugin@1.0.so
-vendor/lib64/libautotracking_interface.so
+# Pin non Q/B5Q libautotracking_interface to avoid addition dependencies
+vendor/lib64/libautotracking_interface.so|ff9539eef120be2d422e4ddedd6d2451b3eb170c
 vendor/lib64/libbeauty_preview.uniplugin@1.0.so
 vendor/lib64/libbeautyshot.arcsoft.so
 vendor/lib64/libbitmlengine.so
