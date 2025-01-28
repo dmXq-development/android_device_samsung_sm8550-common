@@ -27,7 +27,7 @@
     <!-- Low zone brightness thresholds in the range [0, 255] -->
     <integer-array name="config_brightnessThresholdsOfPeakRefreshRate" translatable="false">
         <item>-1</item>
-        <item>37</item>
+        <item>56</item>
     </integer-array>
 
     <!-- Low zone lux thresholds -->
