@@ -30,6 +30,7 @@ genfscon sysfs "/devices/virtual/input"                           u:object_r:ven
 genfscon sysfs "/devices/platform/i2c@33/i2c-33/33-0028/wakeup"                                                                                             u:object_r:sysfs_wakeup:s0
 genfscon sysfs "/devices/platform/i2c@51/i2c-51/51-0059/wakeup"                                                                                             u:object_r:sysfs_wakeup:s0
 genfscon sysfs "/devices/platform/i2c@53/i2c-53/53-0028/wakeup"                                                                                             u:object_r:sysfs_wakeup:s0
+genfscon sysfs "/devices/platform/i2c@54/i2c-54/54-0028/wakeup"                                                                                             u:object_r:sysfs_wakeup:s0
 genfscon sysfs "/devices/platform/samsung_mobile_device/samsung_mobile_device:battery/power_supply/ac/wakeup"                                               u:object_r:sysfs_wakeup:s0
 genfscon sysfs "/devices/platform/samsung_mobile_device/samsung_mobile_device:battery/power_supply/battery/wakeup"                                          u:object_r:sysfs_wakeup:s0
 genfscon sysfs "/devices/platform/samsung_mobile_device/samsung_mobile_device:battery/power_supply/otg/wakeup"                                              u:object_r:sysfs_wakeup:s0
@@ -70,6 +71,32 @@ genfscon sysfs "/devices/platform/soc/ac0000.qcom,qupv3_1_geni_se/a8c000.i2c/i2c
 genfscon sysfs "/devices/platform/soc/ac0000.qcom,qupv3_1_geni_se/a9c000.qcom,qup_hsuart/wakeup"                                                            u:object_r:sysfs_wakeup:s0
 genfscon sysfs "/devices/platform/soc/ae90000.qcom,dp_display/wakeup"                                                                                       u:object_r:sysfs_wakeup:s0
 genfscon sysfs "/devices/platform/soc/soc:qcom,qbt2000/wakeup"                                                                                              u:object_r:sysfs_wakeup:s0
+genfscon sysfs "/devices/platform/i2c@31/i2c-31/31-0059/wakeup"                                                                                             u:object_r:sysfs_wakeup:s0
+genfscon sysfs "/devices/platform/i2c@34/i2c-34/34-0028/wakeup"                                                                                             u:object_r:sysfs_wakeup:s0
+genfscon sysfs "/devices/platform/soc/9c0000.qcom,qupv3_i2c_geni_se/994000.i2c/i2c-37/37-0038/power_supply/mfc-charger/wakeup"                              u:object_r:sysfs_wakeup:s0
+genfscon sysfs "/devices/platform/soc/9c0000.qcom,qupv3_i2c_geni_se/994000.i2c/i2c-37/37-0038/wakeup"                                                       u:object_r:sysfs_wakeup:s0
+genfscon sysfs "/devices/platform/soc/9c0000.qcom,qupv3_i2c_geni_se/9a0000.i2c/i2c-38/38-0057/power_supply/pca9481-charger/wakeup"                          u:object_r:sysfs_wakeup:s0
+genfscon sysfs "/devices/platform/soc/9c0000.qcom,qupv3_i2c_geni_se/9a0000.i2c/i2c-38/38-0057/wakeup"                                                       u:object_r:sysfs_wakeup:s0
+genfscon sysfs "/devices/platform/soc/9c0000.qcom,qupv3_i2c_geni_se/9a0000.i2c/i2c-38/38-0066/max77705-charger/power_supply/max77705-charger/wakeup"        u:object_r:sysfs_wakeup:s0
+genfscon sysfs "/devices/platform/soc/9c0000.qcom,qupv3_i2c_geni_se/9a0000.i2c/i2c-38/38-0066/max77705-charger/power_supply/max77705-otg/wakeup"            u:object_r:sysfs_wakeup:s0
+genfscon sysfs "/devices/platform/soc/9c0000.qcom,qupv3_i2c_geni_se/9a0000.i2c/i2c-38/38-0066/max77705-charger/wakeup"                                      u:object_r:sysfs_wakeup:s0
+genfscon sysfs "/devices/platform/soc/9c0000.qcom,qupv3_i2c_geni_se/9a0000.i2c/i2c-38/38-0066/max77705-fuelgauge/power_supply/max77705-fuelgauge/wakeup"    u:object_r:sysfs_wakeup:s0
+genfscon sysfs "/devices/platform/soc/9c0000.qcom,qupv3_i2c_geni_se/9a0000.i2c/i2c-38/38-0066/max77705-fuelgauge/wakeup"                                    u:object_r:sysfs_wakeup:s0
+genfscon sysfs "/devices/platform/soc/9c0000.qcom,qupv3_i2c_geni_se/9a0000.i2c/i2c-38/38-0066/max77705-usbc/wakeup"                                         u:object_r:sysfs_wakeup:s0
+genfscon sysfs "/devices/platform/soc/9c0000.qcom,qupv3_i2c_geni_se/9a0000.i2c/i2c-38/38-0066/wakeup"                                                       u:object_r:sysfs_wakeup:s0
+genfscon sysfs "/devices/platform/soc/9c0000.qcom,qupv3_i2c_geni_se/994000.i2c/i2c-57/57-0038/power_supply/mfc-charger/wakeup"                              u:object_r:sysfs_wakeup:s0
+genfscon sysfs "/devices/platform/soc/9c0000.qcom,qupv3_i2c_geni_se/994000.i2c/i2c-57/57-0038/wakeup"                                                       u:object_r:sysfs_wakeup:s0
+genfscon sysfs "/devices/platform/soc/9c0000.qcom,qupv3_i2c_geni_se/9a0000.i2c/i2c-58/58-0057/power_supply/pca9481-charger/wakeup"                          u:object_r:sysfs_wakeup:s0
+genfscon sysfs "/devices/platform/soc/9c0000.qcom,qupv3_i2c_geni_se/9a0000.i2c/i2c-58/58-0057/wakeup"                                                       u:object_r:sysfs_wakeup:s0
+genfscon sysfs "/devices/platform/soc/9c0000.qcom,qupv3_i2c_geni_se/9a0000.i2c/i2c-58/58-0066/max77705-charger/power_supply/max77705-charger/wakeup"        u:object_r:sysfs_wakeup:s0
+genfscon sysfs "/devices/platform/soc/9c0000.qcom,qupv3_i2c_geni_se/9a0000.i2c/i2c-58/58-0066/max77705-charger/power_supply/max77705-otg/wakeup"            u:object_r:sysfs_wakeup:s0
+genfscon sysfs "/devices/platform/soc/9c0000.qcom,qupv3_i2c_geni_se/9a0000.i2c/i2c-58/58-0066/max77705-charger/wakeup"                                      u:object_r:sysfs_wakeup:s0
+genfscon sysfs "/devices/platform/soc/9c0000.qcom,qupv3_i2c_geni_se/9a0000.i2c/i2c-58/58-0066/max77705-fuelgauge/power_supply/max77705-fuelgauge/wakeup"    u:object_r:sysfs_wakeup:s0
+genfscon sysfs "/devices/platform/soc/9c0000.qcom,qupv3_i2c_geni_se/9a0000.i2c/i2c-58/58-0066/max77705-fuelgauge/wakeup"                                    u:object_r:sysfs_wakeup:s0
+genfscon sysfs "/devices/platform/soc/9c0000.qcom,qupv3_i2c_geni_se/9a0000.i2c/i2c-58/58-0066/max77705-usbc/wakeup"                                         u:object_r:sysfs_wakeup:s0
+genfscon sysfs "/devices/platform/soc/9c0000.qcom,qupv3_i2c_geni_se/9a0000.i2c/i2c-58/58-0066/wakeup"                                                       u:object_r:sysfs_wakeup:s0
+genfscon sysfs "/devices/platform/soc/ac0000.qcom,qupv3_1_geni_se/a8c000.i2c/i2c-40/40-0056/wakeup"                                                         u:object_r:sysfs_wakeup:s0
+genfscon sysfs "/devices/platform/soc/ac0000.qcom,qupv3_1_geni_se/a8c000.i2c/i2c-60/60-0056/wakeup"                                                         u:object_r:sysfs_wakeup:s0
 
 # Sensor
 genfscon sysfs "/devices/virtual/sensor_event"                                               u:object_r:vendor_sysfs_sensors:s0
