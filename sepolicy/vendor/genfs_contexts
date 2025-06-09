@@ -21,6 +21,9 @@ genfscon sysfs "/devices/virtual/camera"                          u:object_r:ven
 genfscon sysfs "/devices/virtual/camera/flash/rear_flash"         u:object_r:vendor_sysfs_camera_writable:s0
 genfscon sysfs "/devices/virtual/camera/rear/ssrm_camera_info"    u:object_r:vendor_sysfs_camera_writable:s0
 
+# Charging Control
+genfscon sysfs "/class/power_supply/battery/batt_slate_mode"      u:object_r:vendor_sysfs_battery:s0
+
 # Input
 genfscon proc "/bus/input/devices"                                u:object_r:proc_bus_input:s0
 genfscon sysfs "/class/input"                                     u:object_r:vendor_sysfs_input:s0

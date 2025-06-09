@@ -616,3 +616,6 @@ subsystem mem_buf_vm
 
 # IPA Events
 /dev/ipa_events         0660   radio      radio
+
+# Battery
+/sys/class/power_supply/battery                          batt_slate_mode                0660    system  system
