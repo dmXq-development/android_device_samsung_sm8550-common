@@ -259,6 +259,7 @@ PRODUCT_SOONG_NAMESPACES += \
     hardware/google/pixel \
     hardware/lineage/interfaces/power-libperfmgr \
     hardware/qcom-caf/common/libqti-perfd-client \
+    hardware/qcom-caf/wlan \
     hardware/samsung \
     kernel/samsung/sm8550 \
     kernel/samsung/sm8550-modules
