@@ -201,7 +201,8 @@ PRODUCT_PACKAGES += \
 
 # LiveDisplay
 PRODUCT_PACKAGES += \
-    vendor.lineage.livedisplay@2.0-service.samsung-qcom.sm8550
+    vendor.lineage.livedisplay@2.0-service.samsung-qcom.sm8550 \
+    vendor.lineage.touch-service.samsung
 
 # Keymint
 PRODUCT_PACKAGES += \
