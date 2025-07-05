@@ -19,6 +19,9 @@ type imei_efs_file, file_type;
 type sec_efs_file, file_type;
 type tee_efs_file, file_type;
 
+# Pen
+type sysfs_spen, sysfs_type, rw_fs_type, fs_type;
+
 # Fingerprint
 type vendor_biometrics_data_file, file_type, data_file_type;
 
