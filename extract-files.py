@@ -9,7 +9,6 @@ from extract_utils.fixups_blob import (
     blob_fixups_user_type,
 )
 from extract_utils.fixups_lib import (
-    lib_fixup_remove,
     lib_fixups,
     lib_fixups_user_type,
 )
@@ -39,15 +38,6 @@ lib_fixups: lib_fixups_user_type = {
         'vendor.qti.diaghal@1.0',
         'libsecril-client',
     ): lib_fixup_vendor_suffix,
-    (
-        'libar-acdb',
-        'libar-gsl',
-        'liblx-osal',
-        'libats',
-        'libagmclient',
-        'libpalclient',
-        'vendor.qti.hardware.AGMIPC@1.0-impl',
-    ): lib_fixup_remove,
 }
 
 blob_fixups: blob_fixups_user_type = {
