@@ -12,6 +12,33 @@
         </interface>
     </hal>
     <hal format="aidl" optional="true">
+        <name>vendor.samsung.hardware.audio</name>
+        <interface>
+            <name>ISecAudioHal</name>
+            <instance>default</instance>
+        </interface>
+        <interface>
+            <name>ISecEffectFactory</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="aidl" optional="false">
+        <name>vendor.samsung.hardware.keymint</name>
+        <version>1-2</version>
+        <interface>
+            <name>ISehKeyMintExtension</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="aidl" optional="false">
+        <name>vendor.samsung.hardware.keymint</name>
+        <version>1-2</version>
+        <interface>
+            <name>ISehKeyMintFactory</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="aidl" optional="true">
         <name>android.hardware.bluetooth.audio</name>
         <version>4</version>
         <interface>
@@ -61,7 +88,7 @@
     </hal>
     <hal format="aidl" optional="true">
         <name>android.hardware.wifi.hostapd</name>
-       <version>2</version>
+        <version>2</version>
         <interface>
             <name>IHostapd</name>
             <instance>default</instance>
