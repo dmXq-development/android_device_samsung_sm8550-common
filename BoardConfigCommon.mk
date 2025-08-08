@@ -196,11 +196,12 @@ DEVICE_MANIFEST_FILE += \
     $(AUDIO_HAL_DIR)/configs/common/manifest_non_qmaa.xml \
     $(AUDIO_HAL_DIR)/configs/common/manifest_non_qmaa_extn.xml \
     $(COMMON_PATH)/vintf/manifest_kalama.xml \
-    $(COMMON_PATH)/vintf/manifest_samsung.xml \
-    $(COMMON_PATH)/vintf/radio_manifest.xml
+    $(COMMON_PATH)/vintf/manifest_samsung.xml
 
 ifneq ($(TARGET_IS_WIFI-ONLY),true)
-DEVICE_MANIFEST_FILE += $(COMMON_PATH)/configs/network_manifest.xml
+DEVICE_MANIFEST_FILE +=  \
+    $(COMMON_PATH)/configs/network_manifest.xml \
+    $(COMMON_PATH)/vintf/radio_manifest.xml
 endif
 
 DEVICE_MATRIX_FILE := hardware/qcom-caf/common/compatibility_matrix.xml
