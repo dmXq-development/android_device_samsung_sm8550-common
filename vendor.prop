@@ -160,23 +160,6 @@ debug.c2.use_dmabufheaps=1
 debug.stagefright.c2inputsurface=-1
 vendor.media.omx=0
 
-# NFC
-ro.camera.notify_nfc=1
-ro.vendor.nfc.feature.chipname=NXP_SN100U
-ro.vendor.nfc.info.antpos=1
-ro.vendor.nfc.info.antposX=37.0
-ro.vendor.nfc.info.antposY=79.0
-ro.vendor.nfc.info.deviceFoldable=false
-ro.vendor.nfc.info.deviceHeight=157.8
-ro.vendor.nfc.info.deviceWidth=76.2
-ro.vendor.nfc.support.advancedsetting=false
-ro.vendor.nfc.support.autoselect=true
-ro.vendor.nfc.support.defaultaid=true
-ro.vendor.nfc.support.ese=true
-ro.vendor.nfc.support.nonaid=true
-ro.vendor.nfc.support.othercategory=true
-ro.vendor.nfc.support.uicc=true
-
 # NTP
 persist.backup.ntpServer=0.pool.ntp.org
 
