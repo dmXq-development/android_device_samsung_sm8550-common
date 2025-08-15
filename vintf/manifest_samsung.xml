@@ -68,4 +68,12 @@
             <instance>default</instance>
         </interface>
     </hal>
+    <hal format="aidl">
+        <name>vendor.lineage.touch</name>
+        <version>1</version>
+        <interface>
+            <name>IGloveMode</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
 </manifest>
