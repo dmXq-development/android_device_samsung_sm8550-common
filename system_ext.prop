@@ -17,6 +17,3 @@ persist.vendor.data.mode=concurrent
 
 # QC Value Addons
 ro.vendor.qti.va_aosp.support=1
-
-# Radio
-ril.subscription.types=NV,RUIM
