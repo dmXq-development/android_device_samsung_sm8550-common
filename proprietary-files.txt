@@ -109,10 +109,8 @@ vendor/lib64/vendor.samsung.hardware.audio-V1-ndk.so
 vendor/lib64/vendor.samsung.hardware.audio@1.0.so
 
 # Audio FX modules
-vendor/lib64/lib_SamsungRec_07010.so
 vendor/lib64/lib_SoundAlive_3DPosition_ver202.so
 vendor/lib64/lib_SoundAlive_AlbumArt_ver105.so
-vendor/lib64/lib_SoundAlive_play_plus_ver800.so
 vendor/lib64/lib_SoundBooster_ver1100.so
 vendor/lib64/soundfx/libasphere.so
 vendor/lib64/soundfx/libaudioeffectoffload.so
