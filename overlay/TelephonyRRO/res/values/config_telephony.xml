@@ -53,5 +53,4 @@
          supported. The network will be torn down on the source transport, and will be
          re-established on the target transport when condition is allowed for bringing up a
          new network. -->
-    <bool name="config_enhanced_iwlan_handover_check">false</bool>
 </resources>
