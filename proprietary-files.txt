@@ -1,4 +1,4 @@
-# All unpinned blobs are extracted from S911BXXS8DYG5
+# All unpinned blobs are extracted from S9110ZHS6DYI3
 
 # Current blobs with ELF checks disabled:
 # audio.primary.kalama.so depends on liblx-osal and vendor.qti.hardware.AGMIPC@1.0-impl, which are gnu makefile targets
