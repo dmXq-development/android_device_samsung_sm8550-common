@@ -807,7 +807,6 @@ vendor/etc/media_codecs_kalama_vendor.xml
 vendor/etc/media_codecs_performance_kalama.xml
 vendor/etc/media_codecs_performance_kalama_vendor.xml
 vendor/etc/media_kalama/video_system_specs.json
-vendor/etc/media_profiles.xml
 vendor/etc/media_profiles_V1_0.xml
 vendor/etc/media_profiles_kalama.xml
 vendor/etc/seccomp_policy/codec2.vendor.base-arm64.policy
