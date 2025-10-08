@@ -976,7 +976,7 @@ vendor/lib64/libVendorSemDataProps.so
 vendor/lib64/libVendorSemTelephonyProps.so
 vendor/lib64/libengmode_client.so
 vendor/lib64/libqdpr.so
-vendor/lib64/libril_sem.so
+vendor/lib64/libril_sem.so;DISABLE_CHECKELF
 vendor/lib64/libsec-ril.so
 vendor/lib64/libsec_semRil.so
 vendor/lib64/libsecril-client.so;MODULE_SUFFIX=_vendor
